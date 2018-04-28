@@ -3,6 +3,10 @@ body {
   font-size: 16px;
   background-color: #23a0ae;
 }
+.contant {
+  width: 100%;
+  height: 100%;
+}
 .container {
   width: 860px;
   margin-left: auto;
@@ -42,6 +46,16 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #23a0ae;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  cursor: pointer;
 }
 #overlay h2 {
   color: #f3ffe2;
