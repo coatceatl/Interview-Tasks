@@ -38,3 +38,16 @@ p {
   align-items: center;
   justify-content: center;
 }
+#overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#overlay h2 {
+  color: #f3ffe2;
+  font-size: 3.75rem;
+  font-family: 'Open Sans';
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+}
