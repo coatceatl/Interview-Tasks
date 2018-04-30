@@ -49,18 +49,11 @@ p {
   justify-content: center;
 }
 
-.circle {
-  width: 700px;
-  height: 700px;
-  background-image: url(../img/circle.png);
-  border-radius: 50%;
-}
-
-.inner-box {
+button {
   opacity: 0;
-  position: relative;
-  top: 50%;
-  left: 50%;
+  position: absolute;
+  top: 100%;
+  left: 25%;
   text-align: center;
   transform: translate(-50%, -50%);
 }
@@ -91,8 +84,17 @@ p {
   }
 }
 
-.thumbnails:hover .image {
-  opacity: 0.3;
+.thumbnails:hover {
+  .photo {
+    opacity: 0.15;
+  }
+  button {
+    opacity: 1;
+    font-size: 2rem;
+    background-color:@button;
+    color: @base-color;
+    padding: 1rem;
+  }
 }
 
 
