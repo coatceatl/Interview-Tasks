@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <div class='container'>
+      <div class='container' id='thumbnails'>
         <h1>New Zealand</h1>
         <p>This project might be trickier than it seems. Look around carefully. What you see? The sky is blue, the grass is green. The sun shines through the window.</p>
       </div>
@@ -19,7 +19,7 @@
         <div class='col-2'>
           <div class='thumbnails'>
             <img src='img/circle.png' class='photo' alt='New Zealand lake'>
-            <button id='toggle'>View more</button>
+            <button onclick='toggleOverlay()' id='toggle'>View more</button>
           </div>
         </div>
         <div class='col-2'>
@@ -40,11 +40,13 @@
           </div>
         </div>
       </div>
-      <div id='overlay'>
+      <div id='overlay' class='overlay'>
         <h2>Lake Wakatipu</h2>
         <img src='img/full.png' alt='Lake Wakatipu'>
       </div>
     </div>
     </main>
+
+    <script src='index.js'></script>
   </body>
 </html>
