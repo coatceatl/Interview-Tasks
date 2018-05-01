@@ -55,16 +55,19 @@ p {
   }
 }
 img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 75%;
+  max-height: 75%;
 }
 button {
+  background-color: #23a0ae;
+  border: none;
+}
+.close {
   position: absolute;
-  top: 100%;
-  left: 25%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  opacity: 0;
+  top: 10px;
+  right: 10px;
+  font-size: 6rem;
+  color: #f3ffe2;
 }
 .overlay {
   display: none;
@@ -93,30 +96,6 @@ button {
 .overlay--open {
   display: flex;
 }
-.overlay--open .close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 6rem;
-  color: #f3ffe2;
-  /*height: 30px;
-      width: 30px;
-
-      &:before, &:after {
-        position: absolute;
-        left: 15px;
-        content: '';
-        width: 2px;
-        height: 33px;
-      }
-
-      &:before {
-        transform: rotate(45deg);
-      }
-      &:after {
-        transform: rotate(-45deg);
-      }*/
-}
 @media screen and (max-width: 1440px) {
   .thumbnails {
     padding: 5%;
@@ -124,11 +103,4 @@ button {
 }
 .thumbnails:hover .photo {
   opacity: 0.15;
-}
-.thumbnails:hover button {
-  opacity: 1;
-  font-size: 2rem;
-  background-color: #23ae99;
-  color: #f3ffe2;
-  padding: 1rem;
 }

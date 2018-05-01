@@ -58,17 +58,21 @@ p {
 }
 
 img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 75%;
+  max-height: 75%;
 }
 
 button {
+  background-color: @bg;
+  border: none;
+}
+
+.close {
   position: absolute;
-  top: 100%;
-  left: 25%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  opacity: 0;
+  top: 10px;
+  right: 10px;
+  font-size: 6rem;
+  color: @base-color;
 }
 
 .overlay {
@@ -98,33 +102,6 @@ button {
 
   &--open {
     display: flex;
-
-    .close {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      font-size: 6rem;
-      color: @base-color;
-
-      /*height: 30px;
-      width: 30px;
-
-      &:before, &:after {
-        position: absolute;
-        left: 15px;
-        content: '';
-        width: 2px;
-        height: 33px;
-      }
-
-      &:before {
-        transform: rotate(45deg);
-      }
-      &:after {
-        transform: rotate(-45deg);
-      }*/
-
-    }
   }
 }
 
@@ -137,14 +114,6 @@ button {
   &:hover {
     .photo {
       opacity: 0.15;
-    }
-
-    button {
-      opacity: 1;
-      font-size: 2rem;
-      background-color:@button;
-      color: @base-color;
-      padding: 1rem;
     }
   }
 }
