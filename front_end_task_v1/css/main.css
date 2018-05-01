@@ -117,7 +117,7 @@ button {
         transform: rotate(-45deg);
       }*/
 }
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1440px) {
   .thumbnails {
     padding: 5%;
   }
