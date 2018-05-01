@@ -40,13 +40,26 @@ p {
   display: flex;
   flex-direction: row;
   padding-bottom: 100px;
+
+  @media screen and (max-width: 1366px) {
+    flex-direction: column;
+  }
 }
 
 .col-2 {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 50%;
+
+  @media screen and (max-width: 1366px) {
+    width: 100%;
+  }
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 button {
@@ -114,16 +127,24 @@ button {
   }
 }
 
-.thumbnails:hover {
-  .photo {
-    opacity: 0.15;
+.thumbnails {
+
+  @media screen and (max-width: 1366px) {
+    padding: 5%;
   }
-  button {
-    opacity: 1;
-    font-size: 2rem;
-    background-color:@button;
-    color: @base-color;
-    padding: 1rem;
+
+  &:hover {
+    .photo {
+      opacity: 0.15;
+    }
+
+    button {
+      opacity: 1;
+      font-size: 2rem;
+      background-color:@button;
+      color: @base-color;
+      padding: 1rem;
+    }
   }
 }
 
